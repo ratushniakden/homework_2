@@ -23,16 +23,18 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    font-family: 'Dancing Script', cursive;
 }
 
 .navigation {
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Rowdies', cursive;
 }
 
 .contact {
@@ -41,12 +43,42 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .contact button {
     background-color: #262626;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 3px;
-    padding: 1em 1.5em;
+    padding: 1.5em 3em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 810px) {
+    .header {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+
+    .navigation a {
+        flex-flow: column wrap;
+        padding-right: 10px;
+    }
+
+    .contact {
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
 }
