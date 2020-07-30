@@ -1,0 +1,95 @@
+html {
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.cards {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-height: 250px;
+    min-width: 400px;
+    margin: 25px;
+    border-radius: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(133, 197, 245, 1) 0%, rgba(24, 144, 227, 1) 100%);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:first-child {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 189, 153, 1) 0%, rgba(255, 134, 151, 1) 100%);
+}
+
+.card:last-child {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(119, 216, 208, 1) 0%, rgba(6, 209, 185, 1) 100%);
+}
+
+.card h1, h2, p {
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.card h2 {
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.icon {
+    position: absolute;
+    top: 50px;
+    left: 320px;
+}
+
+.circleContainer {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 30%;
+}
+
+.circleBottom {
+    left: 220px;
+    bottom: -120px;
+}
+
+.circleTop {
+    top: -81px;
+    left: 286px;
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        min-width: 320px;
+        min-height: 200px;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+    }
+
+    .circleTop {
+        left: 210px;
+    }
+
+    .icon{
+        top: 40px;
+        left: 250px;
+    }
+}
