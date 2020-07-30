@@ -11,7 +11,6 @@
 </head>
 <body>
 <div class="contactFormContainer">
-    <!--    <img src="./image/sbgImage.jpg" alt="beachImage" class="bgImage">-->
     <div class="contactForm">
         <h1>Contact Form</h1>
         <p>Please fill in your information and we'll be sending your order.</p>
@@ -20,22 +19,24 @@
                 <span class="fieldLabel">
                     Your name
                 </span>
-                <input type="text" placeholder="first name">
-                <input type="text" placeholder="last name">
+                <input type="text" placeholder="first name" class="field">
+                <input type="text" placeholder="last name" class="field">
             </div>
             <div class="label">
                 <span class="fieldLabel">
                     Your email
                 </span>
-                <input type="text" placeholder="your_mail@mail.com">
+                <input type="text" placeholder="your_mail@mail.com" class="field">
             </div>
             <div class="label">
                 <span class="fieldLabel">
                     Phone *
                 </span>
-                <input type="tel" placeholder="000">
-                <input type="tel" placeholder="000">
-                <input type="tel" placeholder="0000">
+                <div class="telephoneInput">
+                    <input type="tel" placeholder="000" class="fieldTel">
+                    <input type="tel" placeholder="000" class="fieldTel">
+                    <input type="tel" placeholder="0000" class="fieldTel">
+                </div>
             </div>
             <div class="label">
                 <span class="fieldLabel">
@@ -54,7 +55,7 @@
                 <textarea></textarea>
             </div>
             <div class="line"></div>
-            <a href="#">Submit form</a>
+            <input type="submit" value="Submit form" class="submitBtn">
         </div>
     </div>
 </div>
