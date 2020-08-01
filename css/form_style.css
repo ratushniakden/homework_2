@@ -47,7 +47,6 @@ a {
 
 .label {
     display: flex;
-    align-items: center;
 }
 
 .label .field, textarea, select {
@@ -56,11 +55,11 @@ a {
     flex-grow: 1;
 }
 
-.label .field + .field{
+.field + .field {
     margin-left: 20px;
 }
 
-.telephoneInput {
+.inputForm {
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -114,7 +113,7 @@ a {
         margin-right: auto;
     }
 
-    .label .field + .field{
+    .label .field + .field {
         margin-left: 0;
     }
 }

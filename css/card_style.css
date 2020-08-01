@@ -16,19 +16,22 @@ html {
     min-width: 400px;
     margin: 25px;
     border-radius: 10px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(133, 197, 245, 1) 0%, rgba(24, 144, 227, 1) 100%);
     color: white;
     position: relative;
     overflow: hidden;
 }
 
-.card:first-child {
+.weeklySalesGradient {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 189, 153, 1) 0%, rgba(255, 134, 151, 1) 100%);
 }
 
-.card:last-child {
+.weeklyOrdersGradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(133, 197, 245, 1) 0%, rgba(24, 144, 227, 1) 100%);
+}
+
+.visitorsOnlineGradient {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(119, 216, 208, 1) 0%, rgba(6, 209, 185, 1) 100%);
 }
@@ -52,7 +55,7 @@ html {
 .icon {
     position: absolute;
     top: 50px;
-    left: 320px;
+    right: 45px;
 }
 
 .circleContainer {
@@ -86,10 +89,5 @@ html {
 
     .circleTop {
         left: 210px;
-    }
-
-    .icon{
-        top: 40px;
-        left: 250px;
     }
 }
