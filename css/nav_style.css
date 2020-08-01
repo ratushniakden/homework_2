@@ -16,13 +16,11 @@ html {
 a {
     color: white;
     text-decoration: none;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .logo {
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -33,7 +31,6 @@ a {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    align-items: center;
     font-size: 1.25rem;
     font-weight: bold;
     font-family: 'Rowdies', cursive;
@@ -41,8 +38,6 @@ a {
 
 .contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
 }
 
@@ -63,7 +58,6 @@ a {
 
     .navigation {
         margin: 10px 0;
-        width: 100%;
         justify-content: space-between;
     }
 }
