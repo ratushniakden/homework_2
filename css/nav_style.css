@@ -30,6 +30,7 @@ a {
 .navigation {
     display: flex;
     flex-grow: 1;
+    max-width: 600px;
     justify-content: space-around;
     font-size: 1.25rem;
     font-weight: bold;
@@ -53,7 +54,7 @@ a {
     .header {
         padding: 30px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .navigation {
