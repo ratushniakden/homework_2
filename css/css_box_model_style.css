@@ -9,6 +9,7 @@ body {
 }
 
 #header {
+    display: flex;
     min-height: 450px;
 }
 
@@ -33,9 +34,9 @@ body {
     padding: 1em 0;
 }
 
-.grid {
+.wrapper {
     margin: 0 auto;
-    max-width: 850px;
+    flex-basis: 850px;
 }
 
 .button {
@@ -54,6 +55,7 @@ body {
 }
 
 .content {
+    display: flex;
     background-color: #EAEAEA;
     color: #333;
     padding-bottom: 2em;
@@ -64,60 +66,58 @@ body {
     flex-direction: row;
 }
 
-.container {
+.contentText {
     display: flex;
-    justify-content: center;
+}
+
+.contentText p + p {
+    margin-left: 20px;
 }
 
 .info {
     padding: 2em;
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+}
+
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .cardSection {
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 2em;
 }
 
-.card {
-    width: 260px;
-    background-color: white;
-    margin-left: 1em;
-}
 
-.cardSection li {
+li {
     display: flex;
-    flex-direction: row;
+    margin: 0 .5em 0 .5em;
 }
 
-.cardImage {
-    width: 260px;
+.card {
+    margin-top: 1em;
+    max-width: 260px;
+    background-color: white;
 }
 
-.cardTitle {
-    width: 260px;
+.cardContent {
     color: black;
-    margin: 0 auto;
-}
-
-.cardText {
-    width: 260px;
-    color: black;
-}
-
-.cardText p {
-    margin: 0;
     padding: 1.5em;
+}
+
+.cardContent p {
+    padding: 1em 0;
 }
 
 h2 {
     padding-top: 25px;
-    padding-bottom: 0;
+    padding-bottom: 25px;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -125,39 +125,36 @@ h2 {
 h3 {
     font-size: 1.17em;
     font-weight: bold;
-    padding-top: 1.5em;
+    padding: 1em 0;
 }
 
 .digitalNeeds {
+    display: flex;
+    justify-content: center;
     background-color: white;
     color: black;
-    padding-top: 2.5em;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 
-.digitalNeedsContent h2 {
-    padding-bottom: 2em;
+.digitalNeeds h2 {
+    padding: 1em 0;
 }
 
-.digital-needs-content h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.digital-needs-content p {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+.digitalNeeds p {
+    padding: 1em 0;
 }
 
 .contactUs {
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .box {
     padding: 2em;
-    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .box h2 {
@@ -171,6 +168,7 @@ h3 {
 }
 
 .box a {
+    padding: 1em 0;
     text-decoration: none;
     color: white;
 }
@@ -182,15 +180,33 @@ h3 {
 #footer {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    padding: 2em;
 }
 
 #footer div {
-    width: 50%;
-    padding: 2em;
+    flex: 1;
 }
 
 #footer div a {
     text-decoration: none;
     color: #2690d4;
+}
+
+@media screen and (max-width: 700px) {
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .contactUs {
+        display: block;
+    }
+
+    #footer {
+        display: block;
+    }
 }
